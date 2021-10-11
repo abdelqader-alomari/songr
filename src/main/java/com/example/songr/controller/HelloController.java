@@ -10,11 +10,12 @@ import java.util.Locale;
 
 @Controller
 public class HelloController {
+
     @GetMapping("/hello")
     public String greetings(@RequestParam(name = "name", required = false, defaultValue = "world") String name,
             Model model) {
         model.addAttribute("name", name); // this is passed to the template automatically
-        return "hello.html"; // this represents the name of the html template which will be rendered
+        return "hello"; // this represents the name of the html template which will be rendered
     }
 
     @GetMapping("/")
@@ -36,10 +37,10 @@ public class HelloController {
             new Album("parachutes", "Coldplay", 10, 2489,
                     "https://th.bing.com/th/id/R.7df771f6610835736b113a810e301ead?rik=FO0S7N69jpw6qQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wJ1hDEcCWkA%2fUUYpYtbpvuI%2fAAAAAAAABxM%2fimRLmzbjRV4%2fs1600%2fcoldplay-parachutes_cd.jpg&ehk=lxmfBlkqGj9bBNNDZn7B1TM%2bQ2RAi5vVlNZ7hbn%2bt2M%3d&risl=&pid=ImgRaw&r=0") };
 
-    @GetMapping("/albums")
-    public String albums(Model model) {
-        model.addAttribute("album", albums);
-        return "albums";
-    }
+    // @GetMapping("/albums")
+    // public String albums(Model model) {
+    // model.addAttribute("album", albums);
+    // return "albums";
+    // }
 
 }
