@@ -1,4 +1,4 @@
-package com.example.songr;
+package com.example.songr.repository;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
