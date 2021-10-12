@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<main>
+
+  <form action="#" th:action="'/addSong/'+ ${albums.id}"  method="post">
+
+    <legend>Add New Song</legend>
+    <label>Title</label>
+    <input name="title" type="text" field="*{title}" />
+    <label>Length</label>
+    <input name="length" type="number" field="*{length}" />
+    <label>Number Of Track </label>
+    <input name="trackNumber" type="number" field="*{trackNumber}" />
+    <p><input type="submit" value="Submit" />
+
+  </form>
+
+
+  <div >
+    <img th:src="${albums.imgUrl}" />
+    <h4>Album Title :<span th:text="${albums.title}"></span></h4>
+    <p>Artist Name :<span th:text="${albums.artist}"></span></p>
+    <p>Song Count:<span th:text="${albums.songCount}"></span></p>
+    <p>Length :<span th:text="${albums.length}"></span></p>
+
+  </div>
+  <div >
+    <div th:each="song : ${song}" >
+      <h5>Song Title :<span th:text="${song.title}"></span></h5>
+      <p>Length :<span th:text="${song.length}"></span></p>
+      <p>Track number :<span th:text="${song.trackNumber}"></span></p>
+    </div>
+  </div>
+</main>
+</body>
+</html>
