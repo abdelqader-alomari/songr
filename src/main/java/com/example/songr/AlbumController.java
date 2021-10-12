@@ -1,4 +1,4 @@
-package com.example.songr.controller;
+package com.example.songr;
 
 //import com.example.songr.repositories.SongrRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,18 +12,18 @@ import org.springframework.web.servlet.view.RedirectView;
 
 public class AlbumController {
     @Autowired
-    SongerRepo songerRepo;
+    SongrRepo songrRepo;
 
     @GetMapping("/albums")
     public String getAlbumList(Model model) {
-        model.addAttribute("Albums", songerRepo.findAll());
+        model.addAttribute("Albums", songrRepo.findAll());
         return "albums";
     }
 
     @PostMapping("/addAlbums")
     public RedirectView addAlbum(@ModelAttribute Album album, Model model) {
         model.addAttribute("Album", album);
-        songerRepo.save(album);
-        return new RedirectView("/albums");
+        songrRepo.save(album);
+        return new RedirectView("albums");
     }
 }

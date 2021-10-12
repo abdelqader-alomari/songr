@@ -14,5 +14,18 @@
         <h2 th:text="'Album Length: ' + ${album.length} + ' Seconds'"></h2>
       </div>
     </div>
+    <h2>Add A New Album</h2>
+
+      <form action="/albums" method="POST">
+        <label for="title">Title:  <input type="text" name="title" id="title"> </label><br>
+        <label for="artist">Artist:  <input type="text" name="artist" id="artist"> </label><br>
+        <label for="songCount">Song Count:  <input type="number" name="songCount" id="songCount"> </label><br>
+        <label for="length">Length:  <input type="number" name="length" id="length"> </label><br>
+        <label for="imageUrl">Image URL: <input type="text" name="imageUrl" id="imageUrl"> </label><br>
+        <input type="submit" value="Add Album">
+      </form>
+    </div>
+    </body>
+    </html>
   </body>
 </html>
