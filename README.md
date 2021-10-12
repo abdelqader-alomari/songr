@@ -19,3 +19,11 @@
 ## Test the app:
 
 You can test the app from IntelliJ by navigate to MainTest and run the test.
+
+# lab 12
+
+Update Album model so that it can be saved in a database. An Album has a title, an artist, a songCount, a length (in seconds), and an imageUrl that is a link to that album’s art. A user should be able to see information about all the albums on the site. A user should be able to add albums to the site.
+
+## Test
+
+gradle bootRun command test is ok and work properly
