@@ -1,6 +1,4 @@
-package com.example.songr;
-
-import com.example.songr.Album;
+package com.example.songr.models;
 
 import javax.persistence.*;
 

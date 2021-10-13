@@ -1,4 +1,4 @@
-package com.example.songr;
+package com.example.songr.models;
 
 import javax.persistence.*;
 import java.util.List;

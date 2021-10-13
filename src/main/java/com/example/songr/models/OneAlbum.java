@@ -1,4 +1,4 @@
-package com.example.songr;
+package com.example.songr.models;
 
 public class OneAlbum {
     private String title;

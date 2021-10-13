@@ -1,5 +1,9 @@
-package com.example.songr;
+package com.example.songr.controllers;
 
+import com.example.songr.models.Album;
+import com.example.songr.repositories.AlbumRepository;
+import com.example.songr.models.Song;
+import com.example.songr.repositories.SongRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
