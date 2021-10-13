@@ -22,5 +22,16 @@
         <input type="submit" value="Add Album">
     </form>
 </div>
+<div style="text-align: center; margin-top: 10px" th:each="album: ${album}">
+    <div>
+        <img th:src="${album.imageUrl}" width="50%"/>
+        <h1 th:text="'Album Artist: ' + ${album.artist}"></h1>
+        <h2 th:text="'Album Title: ' + ${album.title}"></h2>
+        <h2 th:text="'Album # of songs: ' + ${album.songCount}"></h2>
+        <h2 th:text="'Album Length: ' + ${album.length} + ' Seconds'"></h2>
+        <a style="margin: 10px; background-color: grey; text-decoration:none; color:white; font-size:24px;" th:href="@{/addAlbum}">Add Album</a>
+    </div>
+</div>
+
 </body>
 </html>

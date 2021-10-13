@@ -1,6 +1,6 @@
-package com.example.songr;
+package com.example.songr.controllers;
 
-import com.example.songr.Album;
+import com.example.songr.model.Album;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

@@ -1,7 +1,7 @@
-package com.example.songr;
+package com.example.songr.controllers;
 
-import com.example.songr.Album;
-import com.example.songr.SongrRepository;
+import com.example.songr.model.Album;
+import com.example.songr.repository.SongrRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,16 +16,23 @@ public class AlbumController {
     @Autowired
     SongrRepository songrRepository;
 
+//    @GetMapping("/addAlbum")
+//    public String addAlbumForm(){
+//        return "addAlbum";
+//    }
+
+
     @GetMapping("/addAlbum")
     public String getAlbumList(Model model) {
-        model.addAttribute("Albums", songrRepository.findAll());
+        model.addAttribute("album", songrRepository.findAll());
         return "addAlbum";
     }
 
+
     @PostMapping("/addAlbum")
     public RedirectView addAlbum(@ModelAttribute Album album, Model model) {
-        model.addAttribute("Album", album);
+        model.addAttribute("Albums", album);
         songrRepository.save(album);
-        return new RedirectView("/albums");
+        return new RedirectView("/addAlbum");
     }
 }

@@ -1,4 +1,4 @@
-package com.example.songr;
+package com.example.songr.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
