@@ -16,7 +16,7 @@ public class Song {
     private int length;
     private int trackNumber;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "album_id")
 
     private Album album;
