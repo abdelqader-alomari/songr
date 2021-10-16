@@ -37,14 +37,20 @@
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="007dcca1-94bb-421b-8945-57164611b2a6" object-ref="schemas/public/tables/album" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="007dcca1-94bb-421b-8945-57164611b2a6" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="007dcca1-94bb-421b-8945-57164611b2a6" dataset="public.album" active-filter-id="EMPTY_FILTER">
+    <filter-actions connection-id="007dcca1-94bb-421b-8945-57164611b2a6" dataset="public.song" active-filter-id="55434eed-f14d-4bee-8e6e-1075fd5f3ac4">
+      <filter id="55434eed-f14d-4bee-8e6e-1075fd5f3ac4" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND" />
+    </filter-actions>
+    <filter-actions connection-id="007dcca1-94bb-421b-8945-57164611b2a6" dataset="public.album" active-filter-id="d55316dc-06d3-4eaa-adc7-db8b700a5b74">
       <filter id="eb2d1c3c-4d97-4e6b-9491-0a3a984e87be" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND" />
+      <filter id="d55316dc-06d3-4eaa-adc7-db8b700a5b74" name="Filter 2" temporary="false" custom-name="false" type="basic" join-type="AND" />
     </filter-actions>
   </component>
   <component name="DBNavigator.Project.EditorStateManager">

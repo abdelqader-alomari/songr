@@ -90,4 +90,16 @@ public class Album {
         this.imageUrl = imageUrl;
     }
 
+    @Override
+    public String toString() {
+        return "Album{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", artist='" + artist + '\'' +
+                ", songCount=" + songCount +
+                ", length=" + length +
+                ", imageUrl='" + imageUrl + '\'' +
+                ", songs=" + songs +
+                '}';
+    }
 }
